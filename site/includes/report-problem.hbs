@@ -1,0 +1,61 @@
+<div class="gc-rprt-prblm">
+	<div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+		<form action="#">
+			<fieldset>
+				<legend><span class="field-name">{{#is page.language "en"}}Please select all that apply: {{else}}Veuillez cocher toutes les réponses pertinentes&nbsp;:{{/is}}</span></legend>
+					<div class="checkbox">
+						<label for="problem1"><input type="checkbox" data-reveal="#broken" name="problem" value="Something is broken" id="problem1" />{{#is page.language "en"}}Something is broken{{else}}Quelque chose ne fonctionne pas{{/is}}</label>
+					</div>
+					<div class="form-group hide" id="broken">
+						<label for="problem1-detail">{{#is page.language "en"}}Provide more details (optional):{{else}}Fournissez plus des détails (optionnel)&nbsp;:{{/is}}</label>
+						<input type="text" class="form-control full-width" id="problem1-detail">
+					</div>
+					<div class="checkbox">
+						<label for="problem2"><input type="checkbox" data-reveal="#spelling" name="problem" value="It has spelling or grammar mistakes" id="problem2" />{{#is page.language "en"}}The page has spelling or grammar mistakes{{else}}Il y a des erreurs d’orthographe ou de grammaire{{/is}}</label>
+					</div>
+					<div class="form-group hide" id="spelling">
+						<label for="problem2-detail">{{#is page.language "en"}}Provide more details (optional):{{else}}Fournissez plus des détails (optionnel)&nbsp;:{{/is}}</label>
+						<input type="text" class="form-control full-width" id="problem2-detail">
+					</div>
+					<div class="checkbox">
+						<label for="problem3"><input type="checkbox" data-reveal="#wrong" name="problem" value="The information is wrong" id="problem3" />{{#is page.language "en"}}The information is wrong{{else}}L’information est erronée{{/is}}</label>
+					</div>
+					<div class="form-group hide" id="wrong">
+						<label for="problem3-detail">{{#is page.language "en"}}Provide more details (optional):{{else}}Fournissez plus des détails (optionnel)&nbsp;:{{/is}}</label>
+						<input type="text" class="form-control full-width" id="problem3-detail">
+					</div>
+					<div class="checkbox">
+						<label for="problem4"><input type="checkbox" data-reveal="#outdated" name="problem" value="The information is outdated" id="problem4" />{{#is page.language "en"}}The information is outdated{{else}}L’information n’est plus à jour{{/is}}</label>
+					</div>
+					<div class="form-group hide" id="outdated">
+						<label for="problem4-detail">{{#is page.language "en"}}Provide more details (optional):{{else}}Fournissez plus des détails (optionnel)&nbsp;:{{/is}}</label>
+						<input type="text" class="form-control full-width" id="problem4-detail">
+					</div>
+					<div class="checkbox">
+						<label for="problem5"><input type="checkbox" data-reveal="#find" name="problem" value="I can’t find what I’m looking for" id="problem5" />{{#is page.language "en"}}I can’t find what I’m looking for{{else}}Je ne trouve pas ce que je cherche{{/is}}</label>
+					</div>
+					<div class="form-group hide" id="find">
+						<label for="problem5-detail">{{#is page.language "en"}}Describe what you’re looking for (optional):{{else}}Décrivez ce que vous cherchez (optionnel)&nbsp;:{{/is}}</label>
+						<input type="text" class="form-control full-width" id="problem5-detail">
+					</div>
+					<div class="checkbox">
+						<label for="problem6"><input type="checkbox" data-reveal="#confusing" name="problem" value="It’s confusing" id="problem6" />{{#is page.language "en"}}Other{{else}}Autre{{/is}}</label>
+					</div>
+					<div class="form-group hide" id="confusing">
+						<label for="problem6-detail">{{#is page.language "en"}}Provide more details (optional):{{else}}Fournissez plus des détails (optionnel)&nbsp;:{{/is}}</label>
+						<input type="text" class="form-control full-width" id="problem6-detail">
+					</div>
+
+			</fieldset>
+			<button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>{{#is page.language "en"}}Submit{{else}}Soumettre{{/is}}</button>
+		</form>
+	</div>
+	<div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+		<h3>{{#is page.language "en"}}Thank you for your help!{{else}}Merci de votre aide!{{/is}}</h3>
+		{{#is page.language "en"}}
+		<p>You will not receive a reply. For enquiries, please <a href="https://www.canada.ca/en/contact.html">contact us</a>.</p>
+		{{else}}
+		<p>Vous ne recevrez pas de réponse. Pour toute question, s’il vous plaît <a href="https://www.canada.ca/fr/contact.html">contactez-nous</a>.</p>
+		{{/is}}
+	</div>
+</div>
