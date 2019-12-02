@@ -61,21 +61,21 @@ module.exports = (grunt) ->
 			if process.env.TRAVIS_PULL_REQUEST is "false" and process.env.DIST_REPO isnt `undefined` and ( process.env.TRAVIS_TAG isnt "" or process.env.TRAVIS_BRANCH is "master" )
 				pkgOriginal = grunt.file.readJSON("package.json");
 				addToRepo = "themes-cdn";
-				writeTo = "dist/GCWeb/package.json";
+				writeTo = "dist/OGWeb/package.json";
 				pkg = {
-					name: "wet-boew-theme-canada.ca",
+					name: "wet-boew-theme-opengov.ca",
 					version: pkgOriginal.version,
 					description: pkgOriginal.name.toLowerCase() + " theme"
 					repository: {
 						type: "git",
-						url: "git+https://github.com/wet-boew/" + addToRepo + ".git"
+						url: "git+https://github.com/open-data/" + addToRepo + ".git"
 					},
 					author: "wet-boew-bot",
 					license: "MIT",
 					bugs: {
-						url: "https://github.com/wet-boew/" + pkgOriginal.name.toLowerCase() + "/issues"
+						url: "https://github.com/open-data/" + pkgOriginal.name.toLowerCase() + "/issues"
 					},
-					homepage: "https://github.com/wet-boew/" + addToRepo + "#readme"
+					homepage: "https://github.com/open-data/" + addToRepo + "#readme"
 				};
 				grunt.file.write(writeTo, JSON.stringify(pkg, null, 2));
 
