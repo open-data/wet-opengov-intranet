@@ -6,7 +6,7 @@
 .home {
 	.gcweb-menu {
 		border-top: 1px solid #ddd;
-		color: #284162;
+		color: #2564b8;
 		margin-left: 0px;
 	}
 
@@ -52,8 +52,8 @@
 
 	button[aria-haspopup=true]:hover,
 	button[aria-haspopup=true][aria-expanded=true] {
-		background-color: #444;
-		border-color: #444;
+		background-color: #26b;
+		border-color: #fff;
 		color: #fff;
 	}
 
@@ -75,7 +75,7 @@
 	 * Level 1
 	 */
 	[role=menu] {
-		background-color: #444;
+		background-color: #26b;
 		color: #fff;
 		list-style: none;
 		padding: 0;
