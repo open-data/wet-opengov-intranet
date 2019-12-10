@@ -32,7 +32,7 @@ Use grunt to build the distribution:
 
 	grunt dist
 
-Optionaly, install aurora components
+Optionally, install aurora components
 
 	npm install @gctools-components/aurora-css
 	npm install @gctools-components/aurora-ds
